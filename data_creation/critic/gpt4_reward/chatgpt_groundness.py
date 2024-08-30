@@ -161,9 +161,9 @@ def main():
     print(len(previous_result))
     previous_ids = [item["input"]["id"] for item in previous_result]
     print("previously collect data: {0}".format(len(previous_ids)))
-    print("original training data ammount: {0}".format(len(examples)))
+    print("original training data amount: {0}".format(len(examples)))
     examples = [item for item in examples if item["id"] not in previous_ids]
-    print("current training data ammount: {0}".format(len(examples)))
+    print("current training data amount: {0}".format(len(examples)))
 
     result_list = []
     if args.n is not None and len(examples) > args.n:
